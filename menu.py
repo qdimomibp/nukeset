@@ -4,6 +4,7 @@ import nukescripts
 import check
 import openfile
 import MakeWrite
+import nklibrary
 
 tb = nuke.toolbar("Nodes")
 m = tb.addMenu("smoke", icon="one_eyed_prince.png")
@@ -20,3 +21,4 @@ mb.addCommand("StartPerformanceTimers", "nuke.startPerformanceTimers()")
 mb.addCommand("StopPerformanceTimers", "nuke.stopPerformanceTimers()")
 mb.addCommand("OpenFile", "reload(openfile);openfile.main()", "F8", shortcutContext=2)
 mb.addCommand("Write node", "reload(MakeWrite);MakeWrite.main()", "F10", shortcutContext=2)
+mb.addCommand("Nklibrary", "reload(nklibrary);nklibrary.main()")
